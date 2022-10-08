@@ -6,7 +6,7 @@ main:
 
 main:
     li t0,0x80001400
-    li t1, 0xFFFF0000
+    li t1, 0xFFFF
 
     sw t1, 8(t0)
 
@@ -20,3 +20,4 @@ L1:
         bge t2, t3, L1
         addi t2,t2,1
         j L2
+.end
